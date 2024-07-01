@@ -4,17 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyroscope Ball</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Maze Game</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="ball"></div>
+
+    <div class="menubar">
+
     </div>
-    <button id="startButton">Start</button>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="center">
+        <div id="game">
+            <div id="maze">
+                <div id="end"></div>
+            </div>
+            <div id="joystick">
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div class="joystick-arrow"></div>
+                <div id="joystick-head"></div>
+            </div>
+            <div id="note">
+                Click the joystick to start!
+                <p>Move every ball to the center. Ready for hard mode? Press H</p>
+            </div>
+        </div>
+    </div>
+    <a id="youtube" href="https://youtu.be/bTk6dcAckuI" target="_top">
+        <span>See how this game was made</span>
+    </a>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
